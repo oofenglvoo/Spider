@@ -29,7 +29,7 @@ if __name__ == '__main__':
         print(str(text1[i])+",热搜指数:"+str(text2[i]))
     date=datetime.datetime.today()
     print(date)
-    f = open("./热搜数据.txt", "a", encoding='utf-8')
+    f = open("./Topdata.txt", "a", encoding='utf-8')
     f.write("------"+str(date)+"-------\n")
     for i in range(20):
         f.write("Top"+str(i+1)+" "+str(text1[i])+"  热搜指数："+str(text2[i])+"\n")
